@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let result="DAY SO LA :";
+    let arr_maxandmin=[];
+    for (i=0;i<101;i++)
+    {
+        arr_maxandmin[i]=Math.floor(Math.random()*100);
+    }
+    var max=arr_maxandmin[0];
+    var min=arr_maxandmin[0];
+    for (i=0;i<arr_maxandmin.length;i++){
+        result=result+arr_maxandmin[i]+" ";
+
+        if (arr_maxandmin[i]>max)
+        {
+            max=arr_maxandmin[i];
+        }
+    }
+    for (i=0;i<arr_maxandmin.length;i++){
+        if (arr_maxandmin[i]<min)
+        {
+            min=arr_maxandmin[i];
+        }
+    }
+    document.writeln(result);
+    document.write('</br>'+"Gia tri lon nhat trong mang la "+max);
+    document.write('</br>'+"Gia tri lon nhat trong mang la "+min);
+</script>
+</body>
+</html>
